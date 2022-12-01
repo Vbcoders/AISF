@@ -80,7 +80,7 @@ menu
    </div>
         <br><br>
 <div class="history">
-<span class="material-icons" style="font-size:20px">
+<span class="material-icons">
 keyboard_arrow_down
 </span>History</div>
 <div class="matterHyst" style="display:none">
@@ -327,6 +327,12 @@ $(function(){
     $("#link").slideToggle(200);
      });  
    })
+
+$(function() {
+    $(".history").click(function() {
+        $(".matterHyst").slideToggle(200);
+    });
+}); 
         </script>
     </body>
 </html>
