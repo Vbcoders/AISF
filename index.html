@@ -398,9 +398,11 @@ $(function() {
 }); 
    var pattern = /\s/g;
    function space(data){
+   var input = document.getElementById("telephone");
   var isSpace=pattern.test(data);
    if(isSpace){
      alert("In the mobile number space is not allowed");
+       input.value="";
    }else{
 
   }
