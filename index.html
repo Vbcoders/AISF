@@ -404,8 +404,11 @@ $(function() {
      alert("In the mobile number space is not allowed");
          input.value=input.value.slice(0,-1);
    }if((data.charAt(0)!=9)&&(data.charAt(0)!=8)&&(data.charAt(0)!=7)&&(data.charAt(0)!=6)){
-      alert("input.value=input.value.slice(0,-1); number not starts with zero ");
+      alert("mobile number starts with 9,8,7,6 not");
        input.value=input.value.slice(0,-1);
+  }if ((data.chatAt(0)=0)){
+      alert("mobile number not starts with zero");
+      input.value="";
   }
  }
         </script>
