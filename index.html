@@ -403,8 +403,12 @@ $(function() {
    if(isSpace){
      alert("In the mobile number space is not allowed");
          input.value=input.value.slice(0,-1);
-   }else{
-
+   }if(input.charAt(0)!=9)&&
+      (input.charAt(0)!=8)&&
+      (input.charAt(0)!=7)&&
+      (input.charAt(0)!=6){
+      alert("Mobile number not starts with zero ");
+       input.value=input.value.slice(0,-1);
   }
  }
         </script>
