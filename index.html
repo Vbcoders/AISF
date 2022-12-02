@@ -402,7 +402,7 @@ $(function() {
   var isSpace=pattern.test(data);
    if(isSpace){
      alert("In the mobile number space is not allowed");
-       input.value="";
+         input.value=input.value.slice(0,-1);
    }else{
 
   }
