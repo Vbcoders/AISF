@@ -403,10 +403,10 @@ $(function() {
    if(isSpace){
      alert("In the mobile number space is not allowed");
          input.value=input.value.slice(0,-1);
-   }if(data.charAt(0)!=9)&&
-      (data.charAt(0)!=8)&&
-      (data.charAt(0)!=7)&&
-      (data.charAt(0)!=6){
+   }if(isSpace.charAt(0)!=9)&&
+      (isSpace.charAt(0)!=8)&&
+      (isSpace.charAt(0)!=7)&&
+      (isSpace.charAt(0)!=6){
       alert("Mobile number not starts with zero ");
        input.value=input.value.slice(0,-1);
   }
