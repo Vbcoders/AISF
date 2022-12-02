@@ -409,6 +409,8 @@ $(function() {
   }if ((data.chatAt(0)=0)){
       alert("mobile number not starts with zero");
       input.value="";
+  }if(isNaN(data)){
+     alert("Only numbers are allowed");
   }
  }
         </script>
