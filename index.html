@@ -400,6 +400,8 @@ $(function() {
    function space(data){
    var input = document.getElementById("telephone");
   var isSpace=pattern.test(data);
+  var regex = /[^0-9]/g;
+  input.value=input.value.replace(regex,"");
    if(isSpace){
      alert("In the mobile number space is not allowed");
          input.value=input.value.slice(0,-1);
@@ -409,9 +411,6 @@ $(function() {
   }if ((data.chatAt(0)=0)){
       alert("mobile number not starts with zero");
       input.value="";
-  }if(isNaN(input.value)){
-     alert("Only numbers are allowed");
-    input.value="";
   }
  }
         </script>
