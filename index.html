@@ -114,7 +114,7 @@ In 29th National Conference held in September 2018 at Anantapur (Andhra Pradesh)
     <input type="email" name="email" placeholder="Your gmail" required>
   <br /><br>
     <label for="telephone">Telephone Number :</label>
-    <input type="telephone" name="telephone" id="telephone" placeholder="(+91) " required minlength=10 maxlength=10>
+    <input onkeyup="space(this.value)" type="telephone" name="telephone" id="telephone" placeholder="(+91) " required minlength=10 maxlength=10>
 <br><br>
 <label for="street-address">Street Address</label>
     <input type="text" name="street" id="street-address" placeholder="Street" required="">
@@ -396,6 +396,15 @@ $(function() {
         $(".present2").slideToggle(200);
     });
 }); 
+   var pattern = /\s/g;
+   function space(data){
+  var isSpace=pattern.test(data);
+   if(isSpace){
+     alert("In the mobile number space is not allowed");
+   }else{
+
+  }
+ }
         </script>
     </body>
 </html>
