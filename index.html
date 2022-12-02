@@ -404,11 +404,12 @@ $(function() {
   input.value=input.value.replace(regex,"");
    if(isSpace){
      alert("In the mobile number space is not allowed");
-         input.value=input.value.replace(pattern,"");
+         input.value=input.value.replace(pattern,"");;
    }if((data.charAt(0)!=9)&&(data.charAt(0)!=8)&&(data.charAt(0)!=7)&&(data.charAt(0)!=6)){
       alert("not a valid number,mobile number starts with 9,8,7,6 only...");
-       input.value=input.value.replace(pattern,"");
+       input.value=input.value.replace(pattern,"");;
  }
+}
         </script>
     </body>
 </html>
